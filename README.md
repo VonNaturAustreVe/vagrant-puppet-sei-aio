@@ -16,7 +16,7 @@ Vagrantfile para instalar o SEI utilizando o módulo puppet SEI AIO (All-in-One)
 
 ## Sobre
 
-Este Vagrantfile é a forma mais fácil de testar o módulo puppet-seiaio que foi disponibilizado para instalar o SEI.
+Este Vagrantfile é a forma mais fácil de testar o módulo puppet-sei-aio que foi disponibilizado para instalar o SEI usando Puppet.
 
 ## Autores
 
@@ -27,7 +27,7 @@ Desenvolvedores e criadores do módulo
 
 ## Colaboradores
 
-Profissionais que deram apoio na revisão e testes do módulo
+Profissionais que deram apoio na revisão e testes do vagrantfile
 
   * Thiago Ferreira
 
