@@ -68,20 +68,30 @@ O desenvolvimento deste Vagrantfile ocorreu através de uma iniciativa do Minist
 ### Modo rápido
 
 1) Instale o Virtualbox
+
 2) Instale o Vagrant
-3) Instale o plugin hosts
+
+3) Instale o plugin vagrant-hosts
 
     $ vagrant plugin install vagrant-hosts
     
 4) Faça download da box
 
     $ vagrant box add gutocarvalho/centos6x64
+
+5) Faça o clone do repositório vagrant
+
+    $ git clone https://gutocarvalho@bitbucket.org/culturagovbr/vagrant-puppet-sei-aio.git
     
-5) Execute o script
+6) Acesse o diretório
+    
+    $ cd vagrant-puppet-sei-aio
+       
+6) Execute o script
 
     $ bash puppet_config.sh
 
-6) Inicie a box
+7) Inicie a box
 
     $ vagrant up
     
@@ -89,26 +99,37 @@ Em alguns minutos o SEI estará instalado, o tempo varia de acordo com a velocid
 
 ### Modo personalizado
 
+
 1) Instale o Virtualbox
+
 2) Instale o Vagrant
-3) Instale o plugin
+
+3) Instale o plugin vagrant-hosts
 
     $ vagrant plugin install vagrant-hosts
-
+    
 4) Faça download da box
 
     $ vagrant box add gutocarvalho/centos6x64
 
-5) Execute o script
+5) Faça o clone do repositório vagrant
+
+    $ git clone https://gutocarvalho@bitbucket.org/culturagovbr/vagrant-puppet-sei-aio.git
+    
+6) Acesse o diretório
+    
+    $ cd vagrant-puppet-sei-aio
+       
+7) Execute o script
 
     $ bash puppet_config.sh
     
-6) Abra o Vagrantfile e ajuste o que for necessário
+8) Abra o Vagrantfile e ajuste o que for necessário
 
     Você pode ajustar o IP, o nome da VM.
     Recomendo que o nome da VM seja o mesmo domínio do SEI
     
-7) Abra o manifest sei.pp e ajuste conforme necessário
+9) Abra o manifest sei.pp e ajuste conforme necessário
 
 ```puppet
 node "seiaio.hacklab" {
@@ -126,7 +147,7 @@ Para entender como o módulo puppet funciona leia o README dele no site do proje
 
     https://bitbucket.org/instruct/puppet-sei-aio
     
-6) Inicie a box
+10) Inicie a box
 
     $ vagrant up
     
